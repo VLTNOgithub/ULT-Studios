@@ -1,5 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-h1#MAIN_TITLE {
-    font: bold;
-    font-family: 'Comic Sans MS';
+body {
+    background-color: #151515;
+    margin: 0px;
+}
+
+.side {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.side .title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 7vw;
+    font-weight: 800;
+    margin: 0px 10vw;
+    width: 80vw;
+}
+
+#left-side {
+    background-color: var(--left-color);
+    width: 60%;
+    z-index: 2;
+}
+
+#left-side .title {
+    color: white;
+}
+
+#right-side {
+    background-color: var(--right-color);
+}
+
+#right-side .title {
+    color: var(--dark);
+}
+
+@keyframes hover {
+    50% { color: blue }
 }
